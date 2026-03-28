@@ -8,8 +8,8 @@
 
 .calendar-card,
 .booking-panel {
-    background-color: rgba(255,255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.18);
     border-radius: 18px;
     padding: 20px;
     backdrop-filter: blur(6px);
@@ -23,13 +23,13 @@
     margin-bottom: 18px;
 }
 
+
 .calendar-header h3 {
     font-size: 22px;
     color: var(--color-text-light);
 }
-
 .calendar-nav-btn {
-    border: 2px solid rgba(255, 255, 255, 0.35);
+    border: 2px solid rgba(255,255,255,0.35);
     background: transparent;
     color: #fff;
     width: 42px;
@@ -38,12 +38,12 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .calendar-nav-btn:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-}   
+    background-color: rgba(255,255,255,0.12);
+}
 
 .calendar-nav-btn:active {
     transform: translateY(1px);
@@ -54,10 +54,10 @@
     grid-template-columns: repeat(7, 1fr);
     gap: 8px;
     margin-bottom: 10px;
-    font-weight: 70;
+    font-weight: 700;
     font-size: 14px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255,255,255,0.85);
 }
 
 .calendar-grid {
@@ -66,7 +66,7 @@
     gap: 8px;
 }
 
-.calendar-grid,
+.calendar-day,
 .calendar-empty {
     aspect-ratio: 1 / 1;
     border-radius: 12px;
@@ -77,19 +77,19 @@
 }
 
 .calendar-empty {
-    opacity:0;
+    opacity: 0;
 }
 
 .calendar-day {
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    border: 1px solid rgba(255,255,255,0.14);
+    background-color: rgba(255,255,255,0.8);
+    color:#fff;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
 }
 
 .calendar-day:hover {
-    background-color: rgba(255, 255, 255, 0.18);
+    background-color: rgba(255,255,255,0.18);
 }
 
 .calendar-day:active {
@@ -103,12 +103,12 @@
 .calendar-day.selected {
     background-color: #fff;
     color: var(--color-bg-dark);
-    pointer-events: none;
+    border-color: #fff;
 }
 
 .calendar-day.disabled {
     opacity: 0.35;
-    cursor: notallowed;
+    cursor: not-allowed;
     pointer-events: none;
 }
 
@@ -121,7 +121,7 @@
 .selected-date-text {
     margin-bottom: 16px;
     font-weight: 700;
-    color: rgba(255, 255,255, 0.92);
+    color: rgba(255,255,255,0.92);
 }
 
 #selectedDateText {
@@ -136,8 +136,8 @@
 }
 
 .time-slot-btn {
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.8);
     color: #fff;
     padding: 10px 12px;
     border-radius: 12px;
@@ -147,14 +147,14 @@
 }
 
 .time-slot-btn:hover {
-    background-color: rgba(255, 255, 255, 0.14);
- }
+    background-color: rgba(255,255,255,0.14);
+}
 
- .time-slot-btn.selected {
+.time-slot-btn.selected {
     background-color: #fff;
     color: var(--color-bg-dark);
     border-color: #fff;
- }
+}
 
 .booking-form {
     display: grid;
@@ -162,8 +162,8 @@
 }
 
 .form-group {
-    display:grid;
-    gap: 8px;
+    display: grid;
+    gap: 6px;
 }
 
 .form-group label {
