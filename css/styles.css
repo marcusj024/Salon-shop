@@ -240,25 +240,33 @@ Author: [Aaron Aston] */
     }
 
     /* -- features grid -- */
-    
     .features-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        width: max-content;
+        will-change: transform;
+        transition: transform 0.2s ease-out;
         gap: 18px;
     }
 
     .feature-card {
+        flex: 0 0 320px;
         background-color: var(--color-beige);
         border-radius: var(--radius);
         padding: 14px;
         box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(58, 45, 40, 0.12);
+    }
+
+    .feature {
+        overflow: hidden;
     }
 
     .feature-img {
         width: 100%;
         height: 450px;
         object-fit: cover;
-        border-radius: 13px;
+        border-radius: 12px;
         border: 2px solid rgba(58,45,40,0.18);
         margin-bottom: 12px;
     }
